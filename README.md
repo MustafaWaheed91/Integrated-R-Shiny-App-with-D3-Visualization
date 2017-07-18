@@ -2,7 +2,7 @@
 
 A version of this application is hosted in the link below
 
-[http://mustafawaheedapps.shinyapps.io].(http://mustafawaheedapps.shinyapps.io/Integrated-R-Shiny-App-with-D3-Visualization)
+[http://mustafawaheedapps.shinyapps.io](http://mustafawaheedapps.shinyapps.io/Integrated-R-Shiny-App-with-D3-Visualization)
 
 
 This app proposes a simple yet elegant way to visualize tree structures  
