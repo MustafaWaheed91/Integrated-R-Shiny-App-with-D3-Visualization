@@ -1,7 +1,6 @@
-Parent,Child,Demand
+Parent,Child,Qty Per
 A,B,3
 A,C,10
 B,D,100
 G,D,5
 G,E,25
-
