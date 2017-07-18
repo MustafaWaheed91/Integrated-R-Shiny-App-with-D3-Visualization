@@ -50,21 +50,3 @@ sankeyPlotter <- function(links, product_node){
 
 
 }
-
-
-visPlotter <- function(links, product_node){
-
-  product_node$id <- rownames(x$product_node)
-  names(product_node)[1] <- "lable"
-
-  names(links)[1:2] <- c("to", "from")
-  x$links[,3] <- NULL
-  # nodes <- data.frame(id = 1:6, title = paste("node", 1:6),
-  #                     shape = c("dot", "square"),
-  #                     size = 10:15, color = c("blue", "red"))
-  # edges <- data.frame(from = 1:5, to = c(5, 4, 6, 3, 3))
-
-  visNetwork(nodes = x$prod_node, x$prod_link) %>%
-    visOptions(highlightNearest = TRUE, nodesIdSelection = TRUE, collapse = T, autoResize = NULL)
-
-}
