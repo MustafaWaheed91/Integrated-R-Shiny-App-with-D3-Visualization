@@ -1,4 +1,5 @@
 ## Integrated R Shiny App with D3 Visualization
+_by Mustafa Waheed_
 
 A version of this application is hosted in at my website below.
 
@@ -14,3 +15,6 @@ we can use this to control D3 Visualization through R Shiny UI widgets.
 
 This application expects the following to be installed on your machine:  
 *R version 3.3.3*
+
+
+![Tree Visualization](tree_viz.png)
