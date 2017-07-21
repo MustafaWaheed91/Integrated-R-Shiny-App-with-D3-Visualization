@@ -4,6 +4,10 @@ shinyServer(function(input, output, session ) {
     bom_data[!(bom_data$Parent %in% setdiff(as.character(master_products), as.character(input$product)) ), ]
   })
 
+  bom_dat2 <- reactive({
+    bom_data_2[!(bom_data$Parent %in% setdiff(as.character(master_products), as.character(input$product)) ), ]
+  })
+
   # Data
   output$d1 <- renderDataTable({
     bom_data
@@ -28,7 +32,7 @@ shinyServer(function(input, output, session ) {
 
   # Simple Digraph
   output$simp_viz1 <- renderPlot({
-    plot.igraph(graph_from_data_frame(d=bom_data_2, directed=T))
+    plot.igraph(graph_from_data_frame(d=bom_dat2(), directed=T))
   })
 
 

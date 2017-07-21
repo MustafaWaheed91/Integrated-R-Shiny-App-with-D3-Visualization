@@ -9,7 +9,7 @@ shinyUI(
                                      , p("We will test the visualization by flipping between a few different chart types.")
                                      , p("The data tab on the main panel shows the data input used in this application."))
                           , hr()
-                          , selectInput(inputId = "product", label = "Choose Product", choices = master_products, selected = master_products, multiple = T)
+                          , selectInput(inputId = "product", label = "Choose Finished Good", choices = master_products, selected = master_products, multiple = T)
                           , br()
                           , radioButtons(inputId = "viz_type", label = "Choose Chart Type" , choices = c("D3 Tree Visualization", "D3 Sankey Visualization", "Simple Directed Graph"), selected = "D3 Tree Visualization" )
                           , actionButton("var_run", label="Update Chart")
